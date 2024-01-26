@@ -1,4 +1,3 @@
-import {log} from "util";
 
 const { test, expect } = require('@playwright/test');
 import {HomePage} from "../../page-objects/pages/homepage.page"
@@ -14,7 +13,7 @@ const screenSizes = ['Desktop','Mobile']
 for (const screenSize of screenSizes) {
     test.describe("Test Resources Hub OnClicks", () => {
 
-        test.beforeEach( async ({page},testInfo) => {
+        test.beforeEach( async ({page}) => {
             // Initialize POM
             const homePage = new HomePage(page);
 
@@ -60,7 +59,7 @@ for (const screenSize of screenSizes) {
             expect(await datalayerPage.findEvents(events.clearAllFilters)).toBeDefined()
             });
 
-        test(`Tiles should fire datalayer event ${events.tileClick} - ${screenSize}`, async ({ page, context }) => {
+        test(`Tiles should fire datalayer event ${events.tileClick} - ${screenSize}`, async ({ page }) => {
 
             // Initialize POM
             const datalayerPage = new DatalayerPage(page);

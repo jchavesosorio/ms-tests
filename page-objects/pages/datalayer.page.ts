@@ -19,7 +19,7 @@ export class DatalayerPage {
         await this.page.waitForFunction(`typeof window.dataLayer.find((obj) => obj.${name} === "${value}") !== "undefined"`);
         return this.page.evaluate(`window.dataLayer.slice().reverse().filter((obj) => obj.${name} === '${value}')`);
     };
-    
+
     async getDatalayerEvent(event){
         const datalayer = await this.page.evaluate('window.dataLayer')
         // @ts-ignore
