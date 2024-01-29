@@ -1,5 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
-import {env as envVars} from "process";
+require('dotenv').config()
 
 /**
  * Read environment variables from file.
@@ -24,8 +24,8 @@ export default defineConfig({
   reporter: [['html', { open: 'never' }]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-
-    baseURL: 'https://www.mulesoft.com/',
+    // 'https://www.mulesoft.com/'
+    baseURL: process.env.BASE_URL,
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',

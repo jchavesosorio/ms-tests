@@ -1,5 +1,3 @@
-import {resourcesSelectors} from "../../page-objects/selectors/mulesoft";
-
 const { test, expect } = require('@playwright/test');
 import {HomePage} from "../../page-objects/pages/homepage.page";
 import {SliderPage} from "../../page-objects/pages/components/slider.page"

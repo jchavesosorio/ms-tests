@@ -83,7 +83,7 @@ for (const screenSize of screenSizes) {
             expect(logType).toBeDefined();
             expect(logType[0].clickText).toBe(splitText[3])
             expect(logType[0].itemTitle).toBe(splitText[1])
-            expect(logType[0].clickUrl).toContain(href)
+            expect(logType[0].clickUrl).toContain(href);
         });
 
     });
