@@ -1,0 +1,5 @@
+# This file instructs saucectl to not package any files mentioned here.
+.idea/
+.gitignore
+# Remove this to have node_modules uploaded with code
+node_modules/
