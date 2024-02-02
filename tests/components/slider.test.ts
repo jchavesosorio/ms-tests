@@ -4,7 +4,7 @@ import {SliderPage} from "../../page-objects/pages/components/slider.page"
 import {DatalayerPage} from "../../page-objects/pages/datalayer.page";
 import {sliderSelectors} from "../../page-objects/selectors/components";
 import {slider} from "../../test-data/test-data";
-import {events} from "../../test-data/datalayer";
+import {events} from "../../test-data/datalayer-data";
 const screenSizes = ['Desktop','Mobile']
 
 

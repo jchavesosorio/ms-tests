@@ -3,7 +3,7 @@ const { test, expect } = require('@playwright/test');
 import {HomePage} from "../../page-objects/pages/homepage.page"
 import {ResourcePage} from "../../page-objects/pages/resource.page"
 import {DatalayerPage} from "../../page-objects/pages/datalayer.page"
-import {events} from "../../test-data/datalayer";
+import {events} from "../../test-data/datalayer-data";
 import {resourcesSelectors, filterResourcesSelectors} from "../../page-objects/selectors/mulesoft";
 import {path} from "../../test-data/test-data"
 import {waitPresents} from "../../helpers/waitPresents"
